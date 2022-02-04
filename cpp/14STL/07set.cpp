@@ -30,5 +30,19 @@ int main(){
     // s.erase(itr) -   erases the element with iterator itr. O(log N)
     // s.lower_bound(x) -   returs iterator to the first element which is >= x. Returns s.end() if not found O(log N)
     // s.upper_bound(x) -   returs iterator to the first element which is > x. Returns s.end() if not found O(log N)
+
+    //unordered_set     - we use it when order doesn't matter.
+    unordered_set<int> us;
+    //we cannot use complex datatypes in unordered sets.
+
+    //Multisets
+    //multisets allows duplicates.
+    multiset<string> ms;
+    ms.insert("abc");
+    ms.insert("bcd");
+    ms.insert("abc");
+    //As every insertion takes place in a sorted way and as these multisets allows duplicates, these are easy to use alternatives for priority queues.
+    //When we r erasing elements in multiset, we should erase using element value, we should only use iterator to the element. bcoz deleting it using value , deletes all instances of that value.
+     
     return 0;
 }

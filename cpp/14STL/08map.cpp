@@ -3,6 +3,8 @@
 
 #include<iostream>
 #include <map>
+#include <unordered_map>
+
 using namespace std;
 
 
@@ -14,6 +16,7 @@ int main(){
     m["hello"] = 50;
     m["world"] = 12;
     cout<<m["hello"]<<"\n";
+    m.insert({"hai",33});
 
     m.clear(); //clears the map
     // m[key] - value of element with key. 
@@ -28,6 +31,18 @@ int main(){
    // (*itr).first - to access key
    // (*itr).second - to access value.
 
+   //or we can access them using arrow operator 
+   // itr->first
+   // itr->second
+
+   auto it = m.find("hai"); 
+   if(it == m.end()) cout<<"NO Value";
+   else cout<<(*it).first << " "<< (*it).second;
+
+   // unordered maps
+   // When order doesn't matter, we should make use of unordered maps.
+   unordered_map<int, string> um;
+   //We cannot use any complex data types as keys of unordered_map.
     
     return 0;
 }
