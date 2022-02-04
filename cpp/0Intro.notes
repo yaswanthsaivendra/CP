@@ -1,0 +1,31 @@
+! c++ !
+c++ has mainly gone through three changes
+in 2011     called c11
+in 2017     called c17
+in 2020     called c20
+
+
+==> Built-in data types 
+
+int             //long,short,unsigned,signed can be used as we usally do in c.
+float     
+char
+double
+bool  //boolean
+
+==> User defined data types 
+
+struct
+union
+enum
+
+==> Derived data types
+
+Arrays
+Functions
+Pointers
+
+
+==> in cpp, sequence of bytes corresponding to input and output are commonly known as streams.
+Input stream
+Output stream

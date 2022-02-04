@@ -1,0 +1,6 @@
+
+!Main memory consists of three parts
+1. code section
+2. stack
+3. heap
+=> whenever we create a varaible, it will be created in stack part. And we can directly access the stack part in our code section(i.e.,where our main program code lies) but we cannot access heap memory directly in our program. 

@@ -1,0 +1,14 @@
+! Standard template library !
+STL consists of
+=>1. Algorithms         //algorithmic functions for searching and sorting etc.
+=>2. Containers         //template classes for all data structures.
+=>3. Iterators          //We can use these to iterate over those containers.
+=>4. functions          //STL includes classes which overload function call operator. Instances of such classes are called functors.
+
+
+!containers!
+vector
+list
+forward_list
+set
+mapnter

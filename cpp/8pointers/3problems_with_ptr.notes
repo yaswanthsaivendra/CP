@@ -1,0 +1,6 @@
+! problems with pointers !
+ Run time errors can be caused by pointers if we wont use them properly.
+
+==> 1. Unintialized ptr.    //we cannot use a unintialized ptr.
+==> 2. Memory leak.         //this will be caused when we won't deallocate heap memory.
+==> 3. Dangling ptr.

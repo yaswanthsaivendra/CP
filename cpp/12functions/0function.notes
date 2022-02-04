@@ -1,0 +1,99 @@
+! function overloading !
+=>In cpp, we can have functions with the same and different arguments. different arguments in the sense either the no. of arguments for both the functions should be different or datatype of the arguments should be different.
+//example 1     these two will be considered as different functions and valid.
+int add(int x, int y){
+
+}
+
+int add(int x, int y, int z){
+
+}
+
+//example 2     these two will be considered as different functions and valid.
+int add(int x, int y){
+
+}
+
+int add(float x, float y){
+    
+}
+
+//example 3     these two will be not considered as different functions, here the second fucntion rewrites the first one as they are not different . so its invalid.
+int add(int x, int y){
+
+}
+
+float add(int x, int y){
+
+}
+
+
+! passing arguments !
+
+==>1. pass by value (or) call by value
+
+#include<iostream>
+
+using namespace std;
+
+int swap(int a, int b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+
+int main(){
+    int x=10,y=20;
+    swap(x,y);  //here the numbers won't be swapped as we are using call by value method.
+    cout<<x<<" "<<y<<"\n";
+    return 0;
+}
+
+==>2. pass by address  (or) call by address
+
+#include<iostream>
+
+using namespace std;
+
+int swap(int *a, int *b){
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+
+int main(){
+    int x=10,y=20;
+    swap(&x,&y);    //the numbers got swapped.
+    cout<<x<<" "<<y<<"\n";
+    return 0;
+}
+==>3. pass by reference (or) call by reference
+//here in the case of pass by reference, when converting source code into machine code , the function code will be copied at the function call in the main function.
+// while using this method, as function code is being copied in the function, we make sure that the function code doesnt contain any complex code containing loops or smtng.
+#include<iostream>
+
+using namespace std;
+
+int swap(int &a, int &b){
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+}
+
+int main(){
+    int x=10,y=20;
+    swap(x,y);  //the numbers got swapped.
+    cout<<x<<" "<<y<<"\n";
+    return 0;
+}
+
+
+! local and global variables !
+=> a local variable is created in the stack memory.
+=> and it wont exist when it goes out of scope(or the execution of the function in which it is created completes.)
+
+=> a global variable is created in a seperate sub-section in code section (or) its beter to stay, it is created in a seperate section on the top of the code section.
+=> it exists as long as the program runs.
