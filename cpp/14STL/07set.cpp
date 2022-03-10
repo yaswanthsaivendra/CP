@@ -42,7 +42,7 @@ int main(){
     ms.insert("bcd");
     ms.insert("abc");
     //As every insertion takes place in a sorted way and as these multisets allows duplicates, these are easy to use alternatives for priority queues.
-    //When we r erasing elements in multiset, we should erase using element value, we should only use iterator to the element. bcoz deleting it using value , deletes all instances of that value.
+    //When we r erasing elements in multiset, we should not erase using element value, we should only use iterator to the element. bcoz deleting it using value , deletes all instances of that value.
      
     return 0;
 }
