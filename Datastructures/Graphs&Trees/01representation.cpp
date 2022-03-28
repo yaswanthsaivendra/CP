@@ -15,7 +15,7 @@ vector<pair<int,int>> graph4[N];
 int main(){
     int n, m;
     cin>>n>>m;
-    //While giving input for Graph/Matrix, Usually
+    //While giving input for Graph/Trees, Usually
     //First line consists of 2 integers n(no. of vertices), m(no. of edges)
     //Then there will be m lines, each line consists of two integers represeting the vertices with connected edges(with an optional third integer representing weights)
     //Ex:
@@ -69,5 +69,5 @@ int main(){
     // O(N + M)
     // N = 10^5 , E < 10^7
     //Low space complexity, compared to Adjacency Matrix.
-    return 0;
+    return  0;
 }
