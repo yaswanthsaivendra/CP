@@ -1,0 +1,45 @@
+! Handling numbers !
+int is mostly used, 32 bit-type however when int is not enough, long long(64-bit type) can be used.
+//
+long long x = 1234567890987654321LL;
+//
+there is also __int128_t , which is 128-bit type but most rarely used.
+
+! Modular arithmetic!
+Sometimes, the answer is a very large number, but it is enough to output its modulo m.(for ex modulo (10 power 9 + 7))
+Properties of modulo:
+(a + b) mod m = (a mod m + b mod m) mod m
+(a − b) mod m = (a mod m − b mod m) mod m
+(a · b) mod m = (a mod m · b mod m) mod m
+
+Thus, we can take the remainder after every operation and the numbers will never become too large.
+// factorial of n program
+long long x = 1;
+for (int i = 1; i <= n; i++) {
+x = (x*i)%m;    //taking modulo at each step, gives the same output as taking modulo to the final factorial.
+}
+cout << x << "\n";
+//
+
+=> usually we want the remainder to be between 0 and m-1. However there may be chances of occurence of negative numbers while subraction operations.
+// by using this code, we can make sure that there are no negative numbers in remainder.
+x = x%m;
+if (x < 0) x += m;
+//
+
+!Floating point numbers!
+double and long double are used.
+double  `   64-bit
+long double 80-bit
+=> to print a floating point number with exact precision mentioned in problem statement. we use
+//
+printf("%.9f\n", x);
+//
+
+=>Rounding errors are common in floating point numbers, so we should never compare them directly with == operator.
+So we would rather compare them using their difference. If the difference between two floating point numbers is less than a smaller number, we treat them as equal.
+// Here smaller number is 10 power -9.
+if(abs(a-b) < 1e-9){
+    //a and b are equal
+}
+//

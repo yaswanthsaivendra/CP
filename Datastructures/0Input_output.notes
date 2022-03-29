@@ -1,0 +1,53 @@
+! Input and Output!
+!input
+//
+int a,b;
+string x;
+cin >> a >> b >> x;
+//
+
+This kind of code always works, assuming that there is at least one space or newline between them.
+It will work for both these inputs.
+input 1:
+123 456 monkey
+input 2:
+123 456 
+monkey
+
+=> when we want to read a line containing spaces.
+//
+string s;
+getline(cin,s);
+//
+
+=> when we want to take unknown amount of data, a loop should be used.
+//
+while(cin >> x){
+    ....
+}
+//
+
+
+
+!Output
+//
+int a = 123, b = 456;
+string x = "monkey";
+cout << a << " " << b << " " << x << "\n";
+//
+
+=> To avoid any issues caused by I/O, we should include these two lines of code at the start of the main function.
+//
+ios::sync_with_stdio(0);
+cin.tie(0);
+//
+
+=> newline "\n" works faster than endl; coz endl always performs a flush operation.
+
+=>I/O from files.
+//
+freopen("input.txt","r", stdin);
+freopen("output.txt","w", stdout);
+//
+
+

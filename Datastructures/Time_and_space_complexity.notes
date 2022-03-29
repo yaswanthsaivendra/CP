@@ -1,0 +1,9 @@
+! Time and space complexity!
+order of
+o(1)    //constant
+o(n)
+o(n2)   //n sqaure
+o(log n)  //log n to the base 2.
+
+!only 10^7 iterations can be done in one second.
+!maximum array size globally is 10^7 and locally is 10^5.
