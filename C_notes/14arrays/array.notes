@@ -1,0 +1,36 @@
+! Array !
+    int arr[20];
+An array is a collection of similar data items.
+_array stores its data elements in consequent memory locations.
+_array only stores the address of its first element(i.e., base address arr[0]) and it automatically calculates the address of other elements.
+
+
+Its must to declare the size of array(in exact, the size of array should be available during the compile time).
+_its a good programming practice to define the size of an array as a symbolic constant.
+#include <stdio.h>
+#define N 100
+int main()
+{
+int arr[N];
+..............
+}
+
+
+There are three ways to store values in array:
+1. Intializing during declaration:
+	int marks[5] ={3, 5 ,2 , 6, 7};
+	_if the number of values provided is less than the number of elements, the unassigned elements are filled with 0.
+	int marks[5]={3, 5 , 2};
+	_int marks[ ] ={3, 5 ,2 , 6, 7};
+	this is valid in c, as the number of elements in array is implicitly defined.
+2. Inputting elements during run time:
+	//code
+	int i, marks[10];
+	for(i=0;i<10;i++)
+	{
+		scanf("%d", &marks[i])
+	}
+3. by assignment operator:
+	arr[3] = 400;
+NOTE: ! we can't access all the elements of the array at the same time. If we want to do any operations on elements of an array , we have to do it on one by one by looping through array.
+For ex: we  cannot directly copy an array. To do that we have to copy each element at a time by using a loop and with the help of assignment operator.

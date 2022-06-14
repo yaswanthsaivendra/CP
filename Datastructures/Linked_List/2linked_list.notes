@@ -1,0 +1,19 @@
+! linked list !
+
+struct Node *p , *q;
+q = p ; // q will be assigned with address of p, so now both p and q are pointing to the same node.
+
+q = p->next; // q will be assigned with address of p's next, so now q is pointing to the next node of the node on which p is pointing too.
+p = p->next; // p will be reassigned with the address of its next, so now p is poiting to the next node of the node on which its currently pointing too.
+
+//conditions to check if a pointer is pointing no where (or) its a null pointer.
+// here p is null pointer.
+if(p==NULL) //true
+if(p==0)    //true
+if(!p)      //true
+
+
+//condition to check for a last  node in a linked list.
+
+if(p->next==NULL)   //true, if its a last node.
+

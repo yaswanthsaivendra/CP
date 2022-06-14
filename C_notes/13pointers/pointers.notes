@@ -1,0 +1,38 @@
+! pointers !
+A pointer is a variable which stores the address of another variable.
+
+
+    !variable!    !value!   !address!
+        i           70       87944
+        j          87944     87948
+
+j is a pointer 
+j points to i.
+
+// Address of (&) operator
+the address of operator is used to obtain the address of given variable.
+&i = 87944
+&j = 87948
+=>Format specifier to print address is %u
+
+//Value of address operator(*)
+The value od address operator is used to obtain the value present at the given address.
+*(&i) = 72
+*(&j) = 87944
+
+//Declaring a pointer
+int i =70;
+int *j;     //declares a variable j of type int-pointer
+j =&i;      //store address of i in j.
+=> similarly we can use char and float pointers for char and float variables respectively.
+
+//pointer to a pointer 
+just like j is pointing to i or storing the address to i, we can have another variable k which can further store the address of j.
+int **k;
+k = &j;
+
+    !variable!    !value!   !address!
+        i           70       87944
+        j          87944     87948
+        k          87948     87952
+//the same is applied and can create futher pointers.

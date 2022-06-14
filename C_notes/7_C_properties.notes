@@ -1,0 +1,36 @@
+
+Properties of C operators:
+
+
+1. priority:   also called !precedence!
+_The expression having multiple operators evaluated on the basis of priority order.
+_parenthesis "()" have the highest operator precedence, so it is mostly used to overwrite the default priority order. Any thing mentioned in the parenthesis will be evaluated first.
+
+
+    !priority!      !operators!     !Associativity!
+    1st              * / %           left ot right
+    2nd             + -
+    3rd             =
+
+
+    ***added some more***
+    !priority!      !operators!     !Associativity!
+    1st              !                
+    2nd             * / %           left ot right
+    3rd             + -
+    4th             <, >, <=, >=
+    5th             ==, !=
+    6th             &&
+    7th             ||
+    8th             =
+    
+    
+    
+    =
+
+
+
+
+2. Associativity:
+	priority is given precedence over associativity. Associativity only comes into picture two determine the order if multiple operators of equal predence are there in the expression.
+	Associativity determines the order as either right to left or left to right.

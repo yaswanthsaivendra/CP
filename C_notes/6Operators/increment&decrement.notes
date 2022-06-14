@@ -1,0 +1,11 @@
+Increment and decrement operators:
+++ and --
+
+these are unary operators
+
+i++         assignment and then increment
+++i         increment and then assignment
+
+i--         assignment and then decrement
+--i         decrement and then assignment
+

@@ -1,0 +1,54 @@
+Functions :
+1. LIbrary Functions
+2. User defined Functions
+
+! Execution of c program starts from main() function.
+! Every function gets called directly or indirectly from main() function.
+
+Functions can be implemented in three parts:
+1. Function declarartion
+2. Fucntion defenition
+3. Function call
+
+Function declarartion(function prototype) :
+    returndatatype funcname(data_type var1, data_type var2);
+It's optional to mention argument names in function declaration, but it is recommended prartice to mention them. 
+    int func(int, float, char);     or      int func(int num, float fnum, char ch);     //both are valid in c.
+A fucntion cannot be declared within the body of another function.
+
+Function definition:
+//function definition consists of two parts. i.e., function header and function body.
+
+returntype funcname(int var1, char var2)                 //function header
+{
+statement block;                                         //function body
+.........................
+}
+
+_the only difference between function header and function declaration is semicolon at the end.
+_we can skip the function declaration if the function is used or called after the function is defined.
+_if the function is used before defining the function, a function declaration(a.k.a. prototyping the function) is mandatory.
+
+//variables in function header are called formal paramerters
+
+Function call:
+funcname(var1, var2);
+
+_extra arguments passed during a function call will be discarded. 
+_if the arguments in the function call are less than what it specified to accept, then the unmatched arguments will be intialized by garbage values.
+
+return statement:
+_a return statement can only return one value.
+_return statement is used to terminate the execution of a function.
+_function with void return type doesnt have a return statement or have a one like this 
+    return;
+
+
+
+
+
+
+
+Using variable number of arguments in functions:
+It can be done by using the symbol ellipsis(...) , both in the function declaration and defintion.
+    int func(char ch, ...);

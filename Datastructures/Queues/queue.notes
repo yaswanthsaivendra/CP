@@ -1,0 +1,17 @@
+!queue      FIFO
+=> In queue, we have two pointers front and rear.
+=> An element can only be inserted at rear and can only be deleted from front.
+
+=> At start, front and rear both point to -1.
+=> For inserting an element, move rear by 1 and add element at that index.
+=> for deleting an element, move front by 1 and delete the element at that index.
+=> Here in our implementation, our front pointer always points to the index which is before the first element in the queue.
+
+Drawbacks of implementing queue using array :
+1. we cannot reuse the space of deleted elements.
+2. There is an occurence of condition where queue is full as well as empty.
+
+Solutions for this problem :
+1. Resetting pointers.
+    whenever queue is empty , reintiallize the front and rear pointers to -1.
+    But using we cannot use space of deleted elements if queue never become empty.

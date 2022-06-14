@@ -1,0 +1,32 @@
+! stacks !
+=>A stack is a linear data structure in which the elements are added and removed only from one end called top.
+=>Hence, a stack is a LIFO(Last In First Out) data structure.
+
+=> Stacks are needed in the situations where the order of processing is important .
+=> Stacks can be implemented using eithier arrays or linked lists.
+
+*Applications of stack*
+1. reverse the order of the data
+2. parenthesis checking
+3. convert a infix expression to postfix expression (or similar conversions).
+4. Evaluate a Postfix expression
+5. used in function calls
+6. System stack is used in every recursive function
+
+* Operations on stack *
+1. push()       push an element to the top of the stack
+2. pop()        pop an element from the top of the stack
+3. peep()       return the value of the top elememt in the stack
+4. peek(index)  return the value of the an element in the stack using index
+5. isempty()/isfull()
+
+*Implementation of stack using array*
+Stack can be implemented by using linear array with the help of two variables.
+=> one is TOP which always points to the topmost element in the stack
+=> second variable is the MAX which is used to the store the value of maximum number of elements the stack can hold. 
+
+=>if TOP = NULL  //then it indicates that the stack is empty
+=>if TOP = MAX-1 //then it indicates that the stack is full
+
+* Polish notations *
+Infix, Prefix and Postfix are three different but equivalent notations of writing algebaric expressions.

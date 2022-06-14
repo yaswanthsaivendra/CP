@@ -1,8 +1,8 @@
 #include<iostream>
 
 using namespace std;
-/* playing cards
-
+/* 
+    playing cards
 */
 struct card{
     int face;

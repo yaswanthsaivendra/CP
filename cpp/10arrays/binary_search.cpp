@@ -32,6 +32,7 @@ int main(){
         {
             l=mid+1;
         }
+        cout << l << "\t"<<h<<"\n";
     }
     cout<<"element '"<<e<<"' not found";
     return 0;

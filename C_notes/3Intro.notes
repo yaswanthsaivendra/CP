@@ -1,0 +1,65 @@
+Rules for naming variables in c :
+
+==> First character must be an alphabet or underscore(_).
+==> No special symbol other than (_) allowed.
+==> Variable names are case sensitive.
+==> a variable name can contain alphabets, numbers and underscore.
+
+Keywords:
+These are reserved words in c. There are "32 keywords" in c.
+
+Flow control => if, else, return, switch, case, default
+Loops => for, do, while, break, continue
+Common datatypes => int, float, double, char, void
+Structers => struct, typedef, union
+Counting and size things => enum, sizeof
+Rare but still useful types => extern, signed, unsigned, long, short, static, const 
+Evil Keywords which we avoid => goto
+Weirds => auto, register, volatile
+
+Constants:
+1. Numeric Constants
+=> integer
+=> floating point
+2. Character Constants
+=> single character
+=> string 
+
+Common datatypes :
+!! integer !!           //memory bytes can vary depending on compiler.
+==> signed
+int                 "2 bytes"
+short int           "1 byte"
+long int            "4 bytes"
+==> unsigned
+unsigned int
+unsigned short int
+unsigned long int
+
+!! character !!  "1 byte"    EX: char alphabet='A';  //char should be enclosed in single quotes, double quotes are not allowed.
+char
+signed char
+unsigned char
+
+!! floating point type !!
+float           "4 bytes"
+double          "8 bytes"
+long double     "more than 8 bytes"
+
+!! void !!
+
+// If signed or unsigned is not mentioned, by default it is signed.
+Following declarations are valid in C:
+=> short or short int or signed short int
+=> long or long int or signed long int
+=> unsigned int or unsigned
+=> unsigned short int or unsigned short
+=> unsigned long int or unsigned long
+
+! Most of the compilers treat any decimal point number as double but not float!
+
+
+
+
+
+

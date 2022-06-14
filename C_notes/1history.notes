@@ -1,0 +1,6 @@
+Evolution of c:
+ALGOL ---> BCPL ---> B ---> Traditional C ---> K & R C ---> ANSI C ---> ANSI/ISO C(also called C89) ---> C95 ---> C99
+
+ALGOL, BCPL ,B are the languages made before C. C derived concepts from these languages and added some new key concepts like data-types. C is made at bell laboratories along with UNIX. It is made by "w.kernighan & Dennis Ritchie", so called K & R C. Later many different versions of c were made and they are incompitalbe with each other. To avoid this American national standard Institute came up with standard of C, so called "ANSI C". Later the same standard is accepted by ISO(known as C89).
+
+During these times some higher languages like C++/Java are derived from C with additional features. Looking at these features, some changes are made to native C and modified it to C95 then *C99*.

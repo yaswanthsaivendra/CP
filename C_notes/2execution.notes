@@ -1,0 +1,32 @@
+
+Header files :
+
+Header files only contains declarations of functions. C standard library contains the actual code of the functions.
+Linker links the function declarations with the actual code of functions in the standard library.
+
+
+Execution of c program :
+
+https://static.javatpoint.com/cpages/images/c-program-flow.png
+
+-> the c program(also called source code) consists of header files (files with .h extension).
+
+-> the statements starting with #include in our program are called preprocessor derivatives.
+
+-> the preprocessor replace the header files with function declarations and the resulting code is called expanded source code.
+
+-> Then the compiler compiles the program and converts it into assembly code.
+
+-> Then the assembler converts the assembly code into object code(machine lang(binary)).
+
+-> Generally object files have .o extension, although some os like ms-dos & windows have a .obj extension for object files.
+
+-> Then the linker links the various object files to form a binary file that can be directly executed.
+
+-> Finally, the loader loads the code into main memory to excute it by processor.
+
+Programmer jargon:
+
+Source code ==> the program we write is the source code
+compile(build) ==> Taking source code and making a program that computer can understand.
+Executable/binary ==> a program that computer can run.
