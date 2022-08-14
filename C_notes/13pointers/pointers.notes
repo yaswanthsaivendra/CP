@@ -16,8 +16,8 @@ the address of operator is used to obtain the address of given variable.
 =>Format specifier to print address is %u
 
 //Value of address operator(*)
-The value od address operator is used to obtain the value present at the given address.
-*(&i) = 72
+The value of address operator is used to obtain the value present at the given address.
+*(&i) = 70
 *(&j) = 87944
 
 //Declaring a pointer

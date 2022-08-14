@@ -1,0 +1,11 @@
+1. max no. of iterations that can be run in 1 sec - 10^7
+
+2. max array size globally - 10^7
+3. max array size locally - 10^5
+
+4. sizes 
+    int             10^5
+    long int        10^
+    long long int   10^
+
+
