@@ -16,9 +16,5 @@ int main(){
         cout<<v[i].first<<" "<<v[i].second<<"\n";
     }
 
-    
-    
-    
-
     return 0;
 }

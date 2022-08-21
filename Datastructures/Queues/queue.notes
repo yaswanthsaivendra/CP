@@ -13,5 +13,5 @@ Drawbacks of implementing queue using array :
 
 Solutions for this problem :
 1. Resetting pointers.
-    whenever queue is empty , reintiallize the front and rear pointers to -1.
+    whenever q fghvc bueue is empty , reintiallize the front and rear pointers to -1.
     But using we cannot use space of deleted elements if queue never become empty.

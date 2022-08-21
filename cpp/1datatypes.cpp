@@ -1,12 +1,11 @@
 #include <iostream>
 
 
-
 int main(){
-    int num=5;
-    float a=1.14;
-    char ch='A';
-    bool is_true=true;
+    int num = 5;
+    float a = 1.14;
+    char ch = 'A';
+    bool is_true = true;
     //single line comment
     /*multi 
     line 

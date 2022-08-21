@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX 10
 
-int queue[MAX]={0,0,0,0,0,0,0,0,0,0};
+int queue[MAX]={0};
 int front = -1, rear = -1;
 void enqueue(int num);
 void dequeue(void);

@@ -8,7 +8,7 @@ _parenthesis "()" have the highest operator precedence, so it is mostly used to 
 
 
     !priority!      !operators!     !Associativity!
-    1st              * / %           left ot right
+    1st              * / %           left to right
     2nd             + -
     3rd             =
 

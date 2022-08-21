@@ -1,20 +1,20 @@
 Functions :
-1. LIbrary Functions
+1. Library Functions
 2. User defined Functions
 
 ! Execution of c program starts from main() function.
 ! Every function gets called directly or indirectly from main() function.
 
 Functions can be implemented in three parts:
-1. Function declarartion
-2. Fucntion defenition
+1. Function declaration
+2. Fucntion definition
 3. Function call
 
 Function declarartion(function prototype) :
     returndatatype funcname(data_type var1, data_type var2);
 It's optional to mention argument names in function declaration, but it is recommended prartice to mention them. 
     int func(int, float, char);     or      int func(int num, float fnum, char ch);     //both are valid in c.
-A fucntion cannot be declared within the body of another function.
+A function cannot be declared within the body of another function.
 
 Function definition:
 //function definition consists of two parts. i.e., function header and function body.

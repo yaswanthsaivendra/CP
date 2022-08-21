@@ -30,7 +30,5 @@ int main()
     cout << "the employee id is " << yash.eid << "\n";
     cout << "the employee favchar is " << yash.favchar << "\n";
     cout << "the employee salary is " << yash.salary << "\n";
-
     return 0;
-
 }

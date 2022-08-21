@@ -5,7 +5,7 @@ int main(){
     int n_students=3;
     int n_subjects=5;
     int marks[3][5];    //int arr[rows][columns];
-    for (int i = 0; i <n_students; i++)
+    for (int i = 0; i < n_students; i++)
     {
         for (int j = 0; j < n_subjects; j++)
         {
