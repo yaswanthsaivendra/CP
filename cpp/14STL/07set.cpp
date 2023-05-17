@@ -28,8 +28,8 @@ int main(){
     // s.size()     -   returns the current size of the set. O(1)
     // s.find(x)    -   returns iterator to element with value x. Returns s.end() if not found. O(log N)
     // s.erase(itr) -   erases the element with iterator itr. O(log N)
-    // s.lower_bound(x) -   returs iterator to the first element which is >= x. Returns s.end() if not found O(log N)
-    // s.upper_bound(x) -   returs iterator to the first element which is > x. Returns s.end() if not found O(log N)
+    // s.lower_bound(x) -   returns iterator to the first element which is >= x. Returns s.end() if not found O(log N)
+    // s.upper_bound(x) -   returns iterator to the first element which is > x. Returns s.end() if not found O(log N)
 
     //unordered_set     - we use it when order doesn't matter.
     unordered_set<int> us;
