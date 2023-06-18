@@ -30,7 +30,14 @@ int main(){
         g[v1].push_back(v2);
         g[v2].push_back(v1);
     }
-    
-    
+    //if no connected components - only single component. then run dfs for one vertex.
+    // dfs(0);
+
+    // if its a forest with multiple connected components
+    // for(int i=0; i<n; i++) {
+    //     if(!vis[i])
+    //     dfs(i); 
+    // }
+
     return 0;
 }

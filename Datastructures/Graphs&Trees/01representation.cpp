@@ -9,7 +9,7 @@ int graph1[N][N];
 
 vector<int> graph2[N];
 
-int graph3[N][N];
+int graph3[N][N]; 
 vector<pair<int,int>> graph4[N];
 
 int main(){
